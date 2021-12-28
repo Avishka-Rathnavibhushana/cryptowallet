@@ -8,7 +8,7 @@ https://www.freecodecamp.org/news/how-to-create-a-react-app-with-a-node-backend-
 1) run, npm init -y to initialize node project
 2) add index.js file in root folder and following content in it
 
-<!--
+<!-
 // index.js
 
 const express = require("express");
@@ -20,12 +20,12 @@ const app = express();
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
 }); 
--->
+->
 
 4) run, npm i express to add express dependency to package.json
 5) add folowing code to package.json
 
-<!-- 
+<!-
 // package.json
 
 ...
@@ -33,7 +33,7 @@ app.listen(PORT, () => {
   "start": "node server/index.js"
 },
 ... 
--->
+->
 
 6) run, npm start to start server
 7) now server is listening on port 3001
@@ -48,7 +48,7 @@ root
           |- -controller.js
 
 9) add following codes
-<!-- 
+<!-
 // index.js
 
 const express = require("express");
@@ -61,9 +61,9 @@ app.use('/', routes);
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
 }); 
--->
+->
 
-<!-- 
+<!-
 // routes/index.js
 const express = require('express');
 const router = express.Router();
@@ -73,9 +73,9 @@ const { firstRequest } = require('../controllers/controller');
 router.get('/api', firstRequest);
 
 module.exports = router; 
--->
+->
 
-<!-- 
+<!-
 // controllers/controller.js
 const firstRequest = async (req, res, next) => {
     try {
@@ -88,7 +88,7 @@ const firstRequest = async (req, res, next) => {
 module.exports = {
     firstRequest
 } 
--->
+->
 
 
 ## frontend
@@ -96,7 +96,7 @@ module.exports = {
 1) run, npx create-react-app client to initialize react project
 2) add following code in client/srs/App.js file
 
-<!-- 
+<!- 
 // client/src/App.js
 
 import logo from './logo.svg';
@@ -125,6 +125,6 @@ function App() {
 }
 
 export default App; 
--->
+->
 
 3) run, npm start to run front end server
