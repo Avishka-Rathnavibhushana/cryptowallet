@@ -8,7 +8,6 @@ https://www.freecodecamp.org/news/how-to-create-a-react-app-with-a-node-backend-
 1) run, npm init -y to initialize node project
 2) add index.js file in root folder and following content in it
 
-<!-
 // index.js
 
 const express = require("express");
@@ -20,7 +19,7 @@ const app = express();
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
 }); 
-->
+
 
 4) run, npm i express to add express dependency to package.json
 5) add folowing code to package.json
